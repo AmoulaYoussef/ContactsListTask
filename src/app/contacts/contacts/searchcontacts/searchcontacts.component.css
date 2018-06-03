@@ -1,0 +1,11 @@
+.divsearch{
+    background-color: darkgray;
+    position: fixed;
+    z-index: 10000;
+    margin-top:0px;
+    width: 40%;
+}
+
+input[type="search"]{
+    border-radius: 12px;
+}

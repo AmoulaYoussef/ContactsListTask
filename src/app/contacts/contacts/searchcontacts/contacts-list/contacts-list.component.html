@@ -1,0 +1,14 @@
+<div id="postionbottom"> 
+<ul class="list-group" >
+    <div *ngIf="contactsGroupedToView">
+        <div *ngFor="let contactgrouped of contactsGroupedToView">
+            <div id="{{contactgrouped.letter}}" >
+                <h4> {{contactgrouped.letter}}
+                </h4>
+                <app-item-contact *ngFor="let contact of contactgrouped.contacts" [contact]="contact" > 
+                </app-item-contact>
+            </div>
+        </div>
+    </div>
+</ul>
+</div>

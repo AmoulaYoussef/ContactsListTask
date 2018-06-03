@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3">
+            <form  method="POST"  (ngSubmit)="OnAdd(MyForm)" #MyForm=ngForm>
+                <legend>Add a New Contact</legend>
+                <img [src]="imagurl" >
+                      
+                        <div class="upload-options">
+                            <label>
+                                Add Photo
+                                <input #txtImage ngModel  type="file" id="cImage" name="cImage" (change)="uplodaphoto($event.target.files)"/>
+                            </label>
+                        </div>
+              
+                <div class="form-group">
+                    <input #txtFirstName ngModel type="text" class="form-control" id="firstName" required name="firstName" placeholder="First name"  >
+                </div>
+                <div class="form-group">
+                    <input #txtLastName ngModel type="text" class="form-control" id="lastName" required name="lastName"  placeholder="Last name"  >
+                </div>
+                <div class="form-group">
+                    <div class="col-md-3">
+                        <input type="number" #txtFirstnum ngModel  name="firstnum" class="form-control" id="" placeholder="+44" >
+                        </div>
+                        <div class="col-md-9">
+
+                        <input type="number" #txtnum ngModel name="num" class="form-control" id="" placeholder="567 2249"  >
+                    </div>
+                    </div>
+                <div class="form-group">
+                    <input type="text"  #txtEmail ngModel name="email" required class="form-control" id="" placeholder="Email Address">
+                </div>
+
+                <div class="col-md-6 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                <button type="submit" class="btn btn-success" [disabled]="!MyForm.valid">Add Contact</button>
+            </div>
+                <div class="col-md-6 col-md-offset-4 col-sm-6 col-sm-offset-3">
+
+                <button type="button" class="btn btn-primary" [routerLink]="['/viewContatcts']">Cancel</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>

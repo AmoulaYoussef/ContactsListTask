@@ -1,0 +1,10 @@
+ul {
+    list-style-type: none;
+    cursor: pointer;
+    position: fixed;
+    margin-top: -26px;
+    display: inline-table;
+    margin-left: 35%;
+    background-color: white;
+    height: 100%;
+}

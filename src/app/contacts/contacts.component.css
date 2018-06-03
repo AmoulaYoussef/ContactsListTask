@@ -1,0 +1,28 @@
+/* 
+
+div.fixedposition{
+    position: fixed;
+    width: 50%;
+    z-index: 1000;
+    background-color: white;
+} */
+
+span.glyphicon-plus{
+    float: right
+}
+span.AddNewContacts{
+    float: left;
+}
+
+button.Latest{
+    background-color: darkgray;
+}
+.input-group{
+    width: -webkit-fill-available;
+    }
+.fixedPostion{
+    position: fixed;
+    z-index: 10000;
+    background-color: white;
+    margin-top: 34px;
+}

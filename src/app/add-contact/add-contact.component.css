@@ -1,0 +1,62 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+.upload-options {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+}
+
+.upload-options:hover {
+    color: #7fb1b3;
+    cursor: pointer;
+}
+
+.upload-options input {
+    cursor: pointer;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.upload-options label {
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: calc(0% - 3rem);
+    left: calc(45% - 2.25rem);
+    z-index: 0;
+
+}
+
+legend {
+    
+    border-bottom: 1px solid #5cb85c;
+}
+
+.form-control {
+    border: 0;
+    border-bottom:1px solid #5cb85c;
+}
+button{
+    width: 160px;
+    margin-bottom: 6px;
+}

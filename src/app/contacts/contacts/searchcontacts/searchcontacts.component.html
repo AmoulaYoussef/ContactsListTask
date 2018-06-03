@@ -1,0 +1,9 @@
+<div class="divsearch">
+  <input type="search" name="search" (keyup)="search($event)" placeholder="         Search Contacts" class="form-control" value=""
+    required="required" title="">
+</div>
+<div class="listcontacts">
+  <div *ngIf="contactsGroupedToView">
+    <app-contacts-list [contactsGroupedToView]="contactsGroupedToView"></app-contacts-list>
+  </div>
+</div>

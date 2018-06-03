@@ -1,0 +1,25 @@
+<!-- col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3 -->
+<div class="container">
+  <div class="row">
+    <app-list-contacts></app-list-contacts>
+  </div>
+
+  <div class="row">
+    <div class="fixedPostion">
+      <div class="input-group ">
+        <button type="button" class="form-control Latest" [routerLink]="['/add']">
+          <span class="AddNewContacts">Add New Contacts</span>
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+      </div>
+
+      <div class="Latest ">
+        <span>Latest Contacts</span>
+        <app-list-recent-contacts></app-list-recent-contacts>
+      </div>
+
+      <app-alphabetic></app-alphabetic>
+    </div>
+  </div>
+
+</div>
